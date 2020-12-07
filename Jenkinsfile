@@ -23,7 +23,7 @@ pipeline {
             steps {
                 powershell (script:"""
                 docker-compose up -d
-                ./script/test_container.psl
+                ./script/test_container.ps1
                 """)        
             }
             post {
