@@ -34,6 +34,7 @@ pipeline {
                     echo 'app failed to start :('
                 }
             }
+        }
         stage ('Run tests') {
             steps {
                 powershell (script: """
