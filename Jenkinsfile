@@ -21,7 +21,7 @@ pipeline {
         }
         stage ('Start test app'){
             steps {
-                powershell (script: """
+                powershell (script:"""
                 docker-compose up -d
                 ./script/test_container.psl
                 """)        
